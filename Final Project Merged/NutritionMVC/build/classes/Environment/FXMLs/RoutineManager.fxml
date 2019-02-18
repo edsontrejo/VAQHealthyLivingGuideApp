@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Environment.Controllers.RoutineManagerController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+                           <children>
+                              <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0">
+                                 <children>
+                                    <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@../../resources/css/Header.css">
+                                       <children>
+                                          <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: orange;" />
+                                          <Label layoutX="423.0" layoutY="17.0" text="Routine" textFill="WHITE">
+                                             <font>
+                                                <Font name="Verdana" size="40.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+                                    <ComboBox fx:id="routineCB" layoutX="379.0" layoutY="231.0" prefWidth="150.0" promptText="Select Routine.." />
+                                    <Label layoutX="379.0" layoutY="169.0" text="Current Weekly Routine">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font></Label>
+                                    <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="366.0" layoutY="318.0" style="-fx-background-color: orange;" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="promptL" layoutX="431.0" layoutY="272.0" textFill="#388d3b" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

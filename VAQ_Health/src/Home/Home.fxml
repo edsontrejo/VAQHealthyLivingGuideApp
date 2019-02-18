@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0">
+               <children>
+                  <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@../Profile/Header.css">
+                     <children>
+                        <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: orange;" />
+                        <Label layoutX="385.0" layoutY="17.0" text="VAQ Health" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+                  <AnchorPane layoutY="84.0" prefHeight="516.0" prefWidth="106.0" style="-fx-background-color: gray;" stylesheets="@../Profile/Header.css">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutY="44.0" onMouseClicked="#OpenExercise" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Profile/Header.css" text="Exercises" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutY="258.0" onMouseClicked="#OpenProfile" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Profile/Header.css" text="Profile" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="48.0" fitWidth="113.0" layoutX="18.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Rockin%20R%20Initials-White.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton buttonType="RAISED" layoutY="321.0" onMouseClicked="#Logout" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: red;" stylesheets="@../Profile/Header.css" text="Logout" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutY="107.0" onMouseClicked="#OpenRoutine" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Profile/Personal1/Header.css" text="Routine" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutY="168.0" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Profile/Personal1/Header.css" text="Links" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="145.0" layoutY="80.0" prefHeight="520.0" prefWidth="4.0" style="-fx-background-color: orange;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

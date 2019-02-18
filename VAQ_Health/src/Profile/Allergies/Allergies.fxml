@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Profile.Allergies.AllergiesController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@../Header.css">
+               <children>
+                  <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: orange;" />
+                  <Label layoutX="437.0" layoutY="17.0" text="Profile" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <AnchorPane layoutY="84.0" prefHeight="516.0" prefWidth="106.0" style="-fx-background-color: gray;" stylesheets="@../Header.css">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutY="26.0" onMouseClicked="#OpenPersonal" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Header.css" text="Personal" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutY="86.0" onMouseClicked="#OpenMedical" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Header.css" text="Medical" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutY="152.0" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Header.css" text="Alergies" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="48.0" fitWidth="113.0" layoutX="18.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Rockin%20R%20Initials-White.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="816.0" layoutY="502.0" onMouseClicked="#SaveButtion" style="-fx-background-color: orange;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="30.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="145.0" layoutY="80.0" prefHeight="520.0" prefWidth="4.0" style="-fx-background-color: orange;" />
+            <AnchorPane layoutX="276.0" layoutY="153.0" prefHeight="338.0" prefWidth="448.0" style="-fx-background-color: #e9e9e9; -fx-background-radius: 5;">
+               <children>
+                  <CheckBox fx:id="dairy" layoutX="50.0" layoutY="80.0" mnemonicParsing="false" text="Dairy" />
+                  <CheckBox fx:id="soy" layoutX="50.0" layoutY="110.0" mnemonicParsing="false" text="Soy" />
+                  <CheckBox fx:id="eggs" layoutX="50.0" layoutY="140.0" mnemonicParsing="false" text="Eggs" />
+                  <CheckBox fx:id="peanuts" layoutX="50.0" layoutY="170.0" mnemonicParsing="false" text="Peanuts" />
+                  <CheckBox fx:id="fructans" layoutX="140.0" layoutY="80.0" mnemonicParsing="false" text="Fructans" />
+                  <CheckBox fx:id="gluten" layoutX="140.0" layoutY="140.0" mnemonicParsing="false" text="Gluten" />
+                  <CheckBox fx:id="fish" layoutX="50.0" layoutY="200.0" mnemonicParsing="false" text="Fish" />
+                  <CheckBox fx:id="sesame" layoutX="140.0" layoutY="110.0" mnemonicParsing="false" text="Sesame" />
+                  <CheckBox fx:id="wheat" layoutX="50.0" layoutY="230.0" mnemonicParsing="false" text="Wheat" />
+                  <CheckBox fx:id="lactose" layoutX="140.0" layoutY="170.0" mnemonicParsing="false" text="Lactose" />
+                  <CheckBox fx:id="fructose" layoutX="140.0" layoutY="200.0" mnemonicParsing="false" text="Fructose" />
+                  <CheckBox fx:id="sulfites" layoutX="140.0" layoutY="230.0" mnemonicParsing="false" text="Sulfites" />
+                  <CheckBox fx:id="histamines" layoutX="242.0" layoutY="80.0" mnemonicParsing="false" text="Histamines" />
+                  <CheckBox fx:id="nitrites" layoutX="242.0" layoutY="110.0" mnemonicParsing="false" text="Nitrites" />
+                  <CheckBox fx:id="nightshades" layoutX="242.0" layoutY="140.0" mnemonicParsing="false" text="NightShades" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="55.0" fitWidth="86.0" layoutX="25.0" layoutY="15.0" onMouseClicked="#OpenHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../arrow_back_white_192x192.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

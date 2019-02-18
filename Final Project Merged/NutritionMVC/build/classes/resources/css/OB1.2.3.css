@@ -1,0 +1,363 @@
+@font-face {
+	font-family: Ubuntu;
+    src: url("fonts/Ubuntu-C.ttf");
+}
+
+@font-face {
+	font-family: Raleway Light;
+    src: url("fonts/Raleway-Light.ttf");
+}
+
+/*			GENERAL				*/
+#Center{
+	-fx-background-color: #ffffff;
+	-fx-spacing: 10;
+	-fx-padding: 10;
+}
+
+#Center > #pageTitle{
+	-fx-font-size: 30;
+	-fx-text-fill: #444444;
+	-fx-font-family: Raleway Light;
+	-fx-padding: 10 10 0 10;
+}
+
+#Center > #pageInfo{
+	-fx-font-size: 13;
+	-fx-text-fill: #444444;
+	-fx-font-family: Raleway;
+	-fx-padding: 0 15;
+}
+
+/*			EXIT PAGE			*/
+#exitBtn{
+	-fx-background-color: #880d0d;
+	-fx-text-fill: #fff;
+	-fx-background-radius: 2px;
+	-fx-pref-width: 200;
+	-fx-padding: 3;
+	-fx-alignment: top-center;
+}
+
+/*			DIET PAGE			*/
+#Stats{
+	-fx-spacing: 15;
+	-fx-padding: 15;
+	-fx-alignment: top-center;
+}
+
+#Stats > #statsBox{
+	-fx-background-color: #dedede;
+	-fx-padding: 15;
+	-fx-min-width: 150;
+	-fx-pref-height: 50;
+	-fx-background-radius: 2px;
+}
+
+#Stats > #statsBox > .label{
+	-fx-text-fill: #777777;
+	-fx-font-size: 20;
+	-fx-font-family: Ubuntu;
+}
+
+#Categories{
+	-fx-spacing: 15;
+}
+
+#Categories > .button{
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+	-fx-pref-width: 200;
+	-fx-pref-height: 500;
+	-fx-background-radius: 4px;
+	-fx-padding: 0.5px;
+	-fx-text-fill: #fff;
+	-fx-font-size: 14;
+	-fx-font-family: Raleway Light;
+}
+
+#vegetables_category{
+	-fx-background-image: url('../images/buttons/vegetables_category.jpg');
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+	-fx-pref-width: 160;
+	-fx-pref-height: 475;
+}
+
+#wholemeal_category{
+	-fx-background-image: url('../images/buttons/grains_category.jpg');
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+	-fx-pref-width: 160;
+	-fx-pref-height: 475;
+}
+
+#dairy_category{
+	-fx-background-image: url('../images/buttons/dairy_category.jpg');
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+	-fx-pref-width: 160;
+	-fx-pref-height: 475;
+}
+
+#meat_category{
+	-fx-background-image: url('../images/buttons/meat_category.jpg');
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+	-fx-pref-width: 160;
+	-fx-pref-height: 475;
+}
+
+#oils_category{
+	-fx-background-image: url('../images/buttons/oils_category.jpg');
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+	-fx-pref-width: 160;
+	-fx-pref-height: 475;
+}
+
+#junk_category{
+	-fx-background-image: url('../images/buttons/junk_category.jpg');
+	-fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 90%;
+	-fx-pref-width: 160;
+	-fx-pref-height: 475;
+}
+
+#ItemDisplayContentH{
+	-fx-padding: 10;
+	-fx-spacing: 10;
+}
+
+#ItemDisplayContentV{
+	-fx-padding: 10;
+	-fx-spacing: 20;
+}
+
+#itemViewBox{
+	-fx-background-color:
+        linear-gradient(#76b852 25%, #8DC26F 75%),
+        linear-gradient(#76b852, #8DC26F),
+        linear-gradient(#76b852 0%, #8DC26F 20%),
+        linear-gradient(#76b852 0%, #8DC26F 20%),
+        linear-gradient(#76b852 0%, #8DC26F 50%);
+	-fx-padding: 10;
+	-fx-spacing: 15;
+	-fx-border-color: #8bca68;
+	-fx-border-width: 2;
+	-fx-border-radius: 5px;
+	-fx-background-radius: 5px;
+}
+
+#itemViewBox > #itemImageView > #itemImageLayout{
+	-fx-padding: 10;
+	-fx-background-color: #fff;
+	-fx-background-radius: 50;
+	-fx-border-insets: 0;
+	-fx-border-color: #75ad56;
+	-fx-border-width: 2;
+	-fx-border-radius: 50;
+}
+
+#itemViewBox > #itemInfoSection > #itemTitle{
+	-fx-text-fill: #fff;
+	-fx-font-weight: bold;
+	-fx-font-family: Ubuntu;
+	-fx-font-size: 14;
+}
+
+#itemViewBox > #itemInfoSection > #itemData > .Vbox{
+	-fx-spacing: 10;
+}
+
+#itemViewBox > #itemInfoSection > #itemData > .Vbox > .label{
+	-fx-text-fill: #fff;
+}
+
+#itemViewBox > #itemInfoSection > #itemData, #itemOptions{
+	-fx-spacing: 15;
+}
+
+#globalDetails{
+	-fx-spacing: 30;
+}
+
+#detailFoodInfo > #detailFoodImageView > #detailFoodImageLayout{
+	-fx-padding: 20;
+	-fx-background-color: #fff;
+	-fx-background-radius: 100;
+	-fx-border-color: #75ad56;
+	-fx-border-width: 4;
+	-fx-border-radius: 100;
+}
+
+#detailFoodInfo > #detailData > #detailDataTitle{
+	-fx-font-size: 35;
+	-fx-font-family: Ubuntu;
+}
+
+#detailFoodInfo > #detailData > #detailDataGroup{
+	-fx-padding: 0 10;
+	-fx-font-size: 20;
+	-fx-font-family: Ubuntu;
+	-fx-text-fill: #a0a0a0;
+}
+
+#foodFacts{
+	-fx-background-color: #efefef;
+	-fx-padding: 15;
+	-fx-background-radius: 5px;
+}
+
+#foodFacts > #factsTitle{
+	-fx-padding: 0 0 10 0;
+	-fx-font-size: 30;
+	-fx-font-family: Ubuntu;
+}
+
+#foodFacts > #factsFlow{
+	-fx-padding: 0 0 10 0;
+}
+
+#foodFacts > #factsFlow > #factT{
+	-fx-font-family: Raleway Light;
+	-fx-font-weight: bold;
+	-fx-font-size: 14;
+}
+
+#foodFacts > #factsFlow > #factD{
+	-fx-font-family: Raleway Light;
+	-fx-font-size: 14;
+}
+
+#foodFacts > #FactsH{
+	-fx-spacing: 20;
+	-fx-padding: 10;
+}
+
+#foodFacts > #FactsH > #factsPane > #factT{
+	-fx-font-family: Raleway Light;
+	-fx-font-weight: bold;
+	-fx-font-size: 12;
+}
+
+#foodFacts > #FactsH > #factsPane > #factD{
+	-fx-font-family: Raleway Light;
+	-fx-font-size: 12;
+}
+
+/*			MENU			*/
+#mainMenu{
+	-fx-background-color: #CF4411;
+	-fx-min-width: 80;
+	-fx-padding: 0;
+	-fx-alignment: top-center;
+}
+
+#subMenu{
+	-fx-background-color: #64636a;
+	-fx-pref-width: 200;
+	-fx-padding: 30 0 0 0;
+	-fx-alignment: top-center;
+	-fx-spacing: 10;
+}
+
+#mainMenu .button{
+	-fx-background-color: transparent;
+	-fx-text-fill: #fff;
+	-fx-background-radius: 0px;
+	-fx-pref-width: 80;
+}
+
+#mainMenu .button:hover {
+    -fx-background-color: #ff5c2e;
+    -fx-text-fill: #fff;
+}
+
+#subMenu .button{
+	-fx-background-color: transparent;
+	-fx-text-fill: #fff;
+	-fx-background-radius: 0px;
+	-fx-pref-width: 125;
+}
+
+#subMenu .button:hover {
+    -fx-background-color: #1e202b;
+    -fx-text-fill: #c4c5c6;
+	-fx-font-weight: bold;
+}
+
+#Home{
+	-fx-graphic: url('../images/menuIcons/whome24.png');
+}
+
+#Home:hover{
+	-fx-graphic: url('../images/menuIcons/whome24.png');
+}
+
+#Diet{
+	-fx-graphic: url('../images/menuIcons/wapple24.png');
+}
+
+#Diet:hover{
+	-fx-graphic: url('../images/menuIcons/wapple24.png');
+}
+
+#About{
+	-fx-graphic: url('../images/menuIcons/wabout24.png');
+}
+
+#About:hover{
+	-fx-graphic: url('../images/menuIcons/wabout24.png');
+}
+
+#Admin{
+	-fx-graphic: url('../images/menuIcons/wadmin24.png');
+}
+
+#Admin:hover{
+	-fx-graphic: url('../images/menuIcons/wadmin24.png');
+}
+
+#Exercise{
+	-fx-graphic: url('../images/menuIcons/wexercise24.png');
+}
+
+#Exercise:hover{
+	-fx-graphic: url('../images/menuIcons/wexercise24.png');
+}
+
+#Routine{
+	-fx-graphic: url('../images/menuIcons/wlist24.png');
+}
+
+#Routine:hover{
+	-fx-graphic: url('../images/menuIcons/wlist24.png');
+}
+
+#Profile{
+	-fx-graphic: url('../images/menuIcons/wuser24.png');
+}
+
+#Profile:hover{
+	-fx-graphic: url('../images/menuIcons/wuser24.png');
+}
+
+/*TEAM 1 CSS*/
+
+.Header{
+ -fx-background-color:linear-gradient(#FFC837,#FFA000);
+}
+.Side{
+ -fx-background-color:linear-gradient(#FFC830,#FFC837);
+}

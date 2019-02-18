@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Profile.Export.ExportController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@../Personal1/Header.css">
+               <children>
+                  <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: orange;" />
+                  <Label layoutX="474.0" layoutY="17.0" text="Export" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <AnchorPane layoutY="84.0" prefHeight="516.0" prefWidth="106.0" style="-fx-background-color: gray;" stylesheets="@../Personal1/Header.css">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutY="44.0" onMouseClicked="#OpenPersonal" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Personal1/Header.css" text="Personal" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutY="107.0" onMouseClicked="#OpenMedical" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Personal1/Header.css" text="Medical" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutY="169.0" onMouseClicked="#OpenExercise" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Personal1/Header.css" text="Exercise" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="48.0" fitWidth="113.0" layoutX="18.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Rockin%20R%20Initials-White.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutY="230.0" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: orange;" styleClass="Header" stylesheets="@../Personal1/Header.css" text="Export" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="145.0" layoutY="80.0" prefHeight="520.0" prefWidth="4.0" style="-fx-background-color: orange;" />
+            <ImageView fitHeight="55.0" fitWidth="86.0" layoutX="25.0" layoutY="15.0" onMouseClicked="#OpenHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../arrow_back_white_192x192.png" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="161.0" layoutY="106.0" prefHeight="472.0" prefWidth="800.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="691.0" prefWidth="784.0" style="-fx-background-color: white;">
+                     <children>
+                        <AnchorPane layoutX="58.0" layoutY="11.0" prefHeight="433.0" prefWidth="678.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="274.0" layoutY="320.0" onMouseClicked="#Export" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: orange;" styleClass="Header" stylesheets="@../Personal1/Header.css" text="Export" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </JFXButton>
+                              <TextArea fx:id="folderTA" editable="false" layoutX="219.0" layoutY="206.0" prefHeight="17.0" prefWidth="260.0" />
+                              <Label layoutX="143.0" layoutY="216.0" onMouseClicked="#SelectFolder" text="Select Folder" underline="true" />
+                              <AnchorPane fx:id="htmlBackgroundAP" layoutX="275.0" layoutY="31.0" opacity="0.0" prefHeight="147.0" prefWidth="131.0" style="-fx-background-color: #90EE90; -fx-background-radius: 10;" />
+                              <ImageView fitHeight="136.0" fitWidth="131.0" layoutX="274.0" layoutY="38.0" onMouseClicked="#ClickHTML" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../html.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane layoutX="425.0" layoutY="31.0" opacity="0.0" prefHeight="147.0" prefWidth="131.0" style="-fx-background-color: #90EE90; -fx-background-radius: 10;" fx:id="xmlBackgroundAP" />
+                              <ImageView fitHeight="136.0" fitWidth="131.0" layoutX="423.0" layoutY="38.0" onMouseClicked="#ClickXML" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../xml%20.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane fx:id="pdfBackgroundAP" layoutX="124.0" layoutY="31.0" opacity="0.0" prefHeight="147.0" prefWidth="131.0" style="-fx-background-color: #90EE90; -fx-background-radius: 10;" />
+                              <ImageView fitHeight="136.0" fitWidth="131.0" layoutX="124.0" layoutY="38.0" onMouseClicked="#ClickPDF" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../pdf.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="errorL" alignment="CENTER" contentDisplay="CENTER" layoutX="274.0" layoutY="268.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="268.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="emailPane" layoutX="58.0" layoutY="455.0" prefHeight="222.0" prefWidth="683.0" style="-fx-background-color: #e9e9e9;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

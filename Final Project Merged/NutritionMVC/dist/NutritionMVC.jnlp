@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="NutritionMVC.jnlp">
+  <information>
+    <title>NutritionMVC</title>
+    <vendor>dark_</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="NutritionMVC.jar" size="26825833" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\core-renderer.jar" size="1079323" download="eager" />
+    <jar href="lib\iText-2.0.8.jar" size="1213150" download="eager" />
+    <jar href="lib\javax.mail.jar" size="608084" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2384520" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.44-bin.jar" size="999635" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="NutritionMVC" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Environment.MainApplication"  name="NutritionMVC" />
+  <update check="always"/>
+</jnlp>

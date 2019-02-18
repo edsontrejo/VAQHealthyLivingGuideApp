@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="153.0" prefWidth="527.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExerciseSearch.ExerciseSearchSlotController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="slotPane" layoutX="2.0" layoutY="2.0" prefHeight="149.0" prefWidth="695.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="exerciseIV" fitHeight="129.0" fitWidth="172.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pushUp.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D minX="14.0" minY="5.0" />
+               </viewport>
+            </ImageView>
+            <Label fx:id="exerciseNameL" layoutX="252.0" layoutY="2.0" text="Push Up" textFill="#2e5c8a">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="mainMuscleL" layoutX="386.0" layoutY="30.0" text="Main Muscle :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="equipmentL" layoutX="386.0" layoutY="51.0" text="Equipment :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeL" layoutX="386.0" layoutY="70.0" text="Type : ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="metL" layoutX="386.0" layoutY="91.0" text="MET :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

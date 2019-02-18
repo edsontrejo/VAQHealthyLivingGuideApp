@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Environment.Controllers.ExerciseController2">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane id="AnchorPane" fx:id="exerciseDisplayButton" prefHeight="590.0" prefWidth="1000.0" style="-fx-background-color: white;">
+                           <children>
+                              <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@../../resources/css/Header.css">
+                                 <children>
+                                    <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: orange;" visible="false" />
+                                    <Label layoutX="414.0" layoutY="17.0" text="Exercises" textFill="WHITE">
+                                       <font>
+                                          <Font name="Verdana" size="40.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16" minWidth="69" />
+                              <BorderPane fx:id="contentPane" layoutX="55.0" layoutY="113.0" prefHeight="406.0" prefWidth="892.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="113.0">
+                                 <opaqueInsets>
+                                    <Insets left="100.0" right="100.0" />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="100.0" right="100.0" />
+                                 </padding></BorderPane>
+                              <ImageView fx:id="downB" disable="true" fitHeight="40.0" fitWidth="55.0" layoutX="473.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" visible="false" AnchorPane.bottomAnchor="30.33333396911621" AnchorPane.leftAnchor="473.0" AnchorPane.rightAnchor="472.0" AnchorPane.topAnchor="534.0">
+                                 <image>
+                                    <Image url="@../../resources/images/Arrow-clipart-arrow-graphics-clipartcow-4.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="muscleMenuButton" fitHeight="40.0" fitWidth="55.0" layoutX="931.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" visible="false" AnchorPane.bottomAnchor="480.3333339691162" AnchorPane.leftAnchor="931.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="84.0">
+                                 <image>
+                                    <Image url="@../../resources/images/Arrow-clipart-arrow-graphics-clipartcow-4.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RoutineManager.RoutineManagerController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+                           <children>
+                              <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../Profile/Header.css">
+                                 <children>
+                                    <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@../Profile/Header.css">
+                                       <children>
+                                          <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: orange;" />
+                                          <Label layoutX="423.0" layoutY="17.0" text="Routine" textFill="WHITE">
+                                             <font>
+                                                <Font name="Verdana" size="40.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+                                    <AnchorPane layoutY="84.0" prefHeight="516.0" prefWidth="106.0" style="-fx-background-color: gray;" stylesheets="@../Profile/Header.css">
+                                       <children>
+                                          <ImageView fitHeight="48.0" fitWidth="113.0" layoutX="18.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Rockin%20R%20Initials-White.png" />
+                                             </image>
+                                          </ImageView>
+                                          <JFXButton buttonType="RAISED" layoutY="44.0" onMouseClicked="#OpenCreate" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Profile/Header.css" text="Creator" textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton buttonType="RAISED" layoutY="105.0" prefHeight="48.0" prefWidth="149.0" styleClass="Header" stylesheets="@../Profile/Header.css" text="Manager" textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="145.0" layoutY="80.0" prefHeight="520.0" prefWidth="4.0" style="-fx-background-color: orange;" />
+                                    <ImageView fitHeight="55.0" fitWidth="86.0" layoutX="25.0" layoutY="15.0" onMouseClicked="#OpenHome" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../arrow_back_white_192x192.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ComboBox fx:id="routineCB" layoutX="379.0" layoutY="231.0" prefWidth="150.0" promptText="Select Routine.." />
+                                    <Label layoutX="379.0" layoutY="169.0" text="Current Weekly Routine">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font></Label>
+                                    <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="366.0" layoutY="318.0" style="-fx-background-color: orange;" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="promptL" layoutX="431.0" layoutY="272.0" textFill="#388d3b" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

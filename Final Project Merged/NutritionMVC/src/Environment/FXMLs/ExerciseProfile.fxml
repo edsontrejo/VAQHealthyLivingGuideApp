@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+<?import org.controlsfx.control.CheckListView?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Environment.Controllers.ExerciseProfileController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0">
+               <children>
+                  <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@../../resources/css/Header.css">
+                     <children>
+                        <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="2000.0" style="-fx-background-color: orange;" />
+                        <Label layoutX="417.0" layoutY="17.0" text="Exercise" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton buttonType="RAISED" layoutX="816.0" layoutY="502.0" onMouseClicked="#Save" style="-fx-background-color: orange;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Light" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <AnchorPane layoutX="210.0" layoutY="131.0" prefHeight="446.0" prefWidth="514.0" style="-fx-background-color: #e9e9e9; -fx-background-radius: 5;">
+                     <children>
+                        <CheckListView fx:id="equipmentCCB" layoutX="36.0" layoutY="137.0" prefHeight="283.0" prefWidth="441.0" />
+                        <Label layoutX="178.0" layoutY="14.0" text="Equipment">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                        <CheckComboBox fx:id="exerciseTypeCCB" layoutX="53.0" layoutY="74.0" prefHeight="25.0" prefWidth="167.0" />
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="799.0" layoutY="118.0" prefHeight="199.0" prefWidth="231.0" style="-fx-background-color: #e9e9e9; -fx-background-radius: 5;">
+                     <children>
+                        <ImageView fx:id="equipmentIV" fitHeight="171.0" fitWidth="195.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="primaryMuscleL" layoutX="751.0" layoutY="330.0" />
+                  <TextArea fx:id="descriptionTA" editable="false" layoutX="751.0" layoutY="393.0" prefHeight="95.0" prefWidth="327.0" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

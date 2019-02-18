@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Profile>
+     <ProfileInformation>
+     <PersonalComponent id="1">
+          <firstname>Stephen</firstname>
+          <lastname>Izquierdo</lastname>
+          <address>1234 ad street</address>
+          <city>Harlingen</city>
+          <state>Alabama</state>
+          <email>hur@gmail.com</email>
+          <sex>Male</sex>
+     </PersonalComponent>
+     <MedicalComponent id="1">
+          <weight>140</weight>
+          <height>6</height>
+          <disease>Celiac; </disease>
+          <allergy>Night Shades; </allergy>
+     </MedicalComponent>
+     <ExerciseComponent id="1">
+          <exercise>Running Machine; Eliptical Machine; </exercise>
+     </ExerciseComponent>
+</ProfileInformation>
+     <ProfileInformation>
+     <PersonalComponent id="1">
+          <firstname>Stephen</firstname>
+          <lastname>Izquierdo</lastname>
+          <address>1234 ad street</address>
+          <city>Harlingen</city>
+          <state>Alabama</state>
+          <email>hur@gmail.com</email>
+          <sex>Male</sex>
+     </PersonalComponent>
+     <MedicalComponent id="1">
+          <weight>140</weight>
+          <height>6</height>
+          <disease>Celiac; </disease>
+          <allergy>Night Shades; </allergy>
+     </MedicalComponent>
+     <ExerciseComponent id="1">
+          <exercise>Running Machine; Eliptical Machine; </exercise>
+     </ExerciseComponent>
+</ProfileInformation>
+</Profile>

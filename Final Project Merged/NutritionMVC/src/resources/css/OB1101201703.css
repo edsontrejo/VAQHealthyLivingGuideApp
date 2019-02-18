@@ -1,0 +1,60 @@
+@font-face {
+
+    src: url("fonts/Raleway-Bold.ttf");
+}
+
+#sideTop{
+	-fx-alignment: center;
+	-fx-padding: 15 0 10 0;
+	-fx-background-color:#ff8c00;
+
+	
+}
+
+#header-title {
+	-fx-text-fill: #757575;
+	-fx-font: 50px "Raleway";
+	-fx-effect: innershadow(three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+#sideCenter{
+	-fx-background-color:#32cd32 ;
+}
+
+#sideLeft{
+	-fx-background-color: #757575
+}
+
+#sideRight{
+	
+}
+
+#searchBtn{
+	-fx-background-color:
+		linear-gradient(#ffd65b, #e68400),
+		linear-gradient(#ffef84, #f2ba44),
+		linear-gradient(#ffea6a, #efaa22),
+		linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+		linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.button{
+	-fx-background-color:
+		linear-gradient(#ffd65b, #e68400),
+		linear-gradient(#ffef84, #f2ba44),
+		linear-gradient(#ffea6a, #efaa22),
+		linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+		linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+#plateTemplate .button{
+	-fx-background-color: transparent;
+}
+
+#notifBox .label{
+	-fx-text-fill: #fff;
+}
+
+#searchField{
+        -fx-background-color: orange,white;
+}

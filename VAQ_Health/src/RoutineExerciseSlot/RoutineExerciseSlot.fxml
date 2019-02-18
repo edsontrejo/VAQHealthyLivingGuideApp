@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="backgroundPane" prefHeight="270.0" prefWidth="772.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RoutineExerciseSlot.RoutineExerciseSlotController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="9.0" prefHeight="251.0" prefWidth="748.0" style="-fx-background-color: #e9e9e9; -fx-background-radius: 5;">
+         <children>
+            <ImageView fx:id="exerciseIV" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pushUp.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="exerciseNameL" alignment="CENTER" layoutX="43.0" layoutY="-1.0" prefHeight="37.0" prefWidth="135.0" text="Exercise Name" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="570.0" AnchorPane.topAnchor="-1.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="328.0" layoutY="4.0" text="MET:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="536.0" layoutY="4.0" text="Type:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="329.0" layoutY="26.0" text="Difficulty:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="metL" layoutX="370.0" layoutY="4.0" text="met score">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="descriptionTA" editable="false" layoutX="333.0" layoutY="87.0" prefHeight="139.0" prefWidth="406.0" wrapText="true" />
+            <JFXButton fx:id="completeButton" layoutX="69.0" layoutY="201.0" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: orange;" text="Finished" textFill="WHITE" />
+            <Label fx:id="typeL" layoutX="579.0" layoutY="4.0" text="Cardio">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="difficultyL" layoutX="397.0" layoutY="26.0" text="Hard">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="533.0" layoutY="26.0" text="Required Equipment: ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="equipmentL" layoutX="676.0" layoutY="26.0" text="None">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="329.0" layoutY="47.0" text="Work Out Time(Min):">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="workOutTimeL" layoutX="469.0" layoutY="47.0" text="10:00">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="533.0" layoutY="47.0" text="Expected Caloried Burned">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="expectedCaloriedBurnedL" layoutX="707.0" layoutY="47.0" text="10:00">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

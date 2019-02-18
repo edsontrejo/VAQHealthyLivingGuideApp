@@ -1,0 +1,52 @@
+@font-face {
+	font-family: Ubuntu Condensed;
+    src: url("fonts/Ubuntu-C.ttf");
+}
+
+#platePane{
+	-fx-padding: 15;
+}
+
+#tabTitle{
+	-fx-font-size: 30;
+	-fx-font-weight: bold;
+}
+
+#itemDisplay{
+	-fx-padding: 15;
+}
+
+#itemDisplayHead #groupTitle{
+	-fx-font-size: 30;
+	-fx-spacing: 10;
+	-fx-font-weight: bold;
+}
+
+#itemDisplayerBody{
+	-fx-padding: 15;
+	-fx-spacing: 20;
+}
+
+#itemViewBox{
+	-fx-background-color: #fff;
+	-fx-padding: 10;
+	-fx-spacing: 20;
+}
+
+#itemViewBox > #itemImageView > #itemImageLayout{
+	-fx-padding: 10;
+	-fx-border-insets: 5;
+	-fx-border-color: blue;
+	-fx-border-width: 3;
+	-fx-border-radius: 50;
+}
+
+#itemViewBox > #itemInfoSection > #itemTitle{
+	-fx-text-fill: #292929;
+	-fx-font-weight: bold;
+	-fx-font-size: 20;
+}
+
+#itemViewBox > #itemInfoSection > #ItemsData, #itemOptions{
+	-fx-spacing: 15;
+}

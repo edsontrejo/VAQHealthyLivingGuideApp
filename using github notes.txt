@@ -1,0 +1,17 @@
+-Getting into the project-
+cd <netbeans/projectfolder>					(where you want to do code, really)
+git init							(initialize)
+git remote add origin <project url clone>			(the repo is variable origin)
+git pull origin master						(the project master in your folder)
+git add *							(after changes, you stage it)
+git commit -m "commit message"					(encouraged to make long messages)
+git push origin master						(should be up the master in repo)
+
+-Branching, please do this and not edit master, merge not here but later it will-
+git branch <name-of-new-branch1>				(creates new branch, only you know, like mkdir)
+git checkout <name-of-new-branch1>				(changes like cd, but internally)
+git add *
+git commit -m "experiment additions"
+git push origin <name-of-new-branch1>				(puts the branch on github)
+git checkout master						(returns back to master w/ master edits)
+git checkout <name-of-new-branch1>				(returns bac to <n-o-n-b1> w/ its edits)

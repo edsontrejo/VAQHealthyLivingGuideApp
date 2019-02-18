@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Environment.Controllers.HomeController">
+   <children>
+      <AnchorPane id="AnchorPane">
+         <children>
+            <AnchorPane id="AnchorPane">
+               <children>
+                  <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header" stylesheets="@/resources/css/OB1.2.3.css">
+                     <children>
+                        <AnchorPane layoutY="76.0" style="-fx-background-color: orange;" />
+                        <Label layoutX="385.0" layoutY="17.0" text="VAQ Health" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

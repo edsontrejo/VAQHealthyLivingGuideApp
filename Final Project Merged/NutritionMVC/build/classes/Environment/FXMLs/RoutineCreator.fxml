@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Environment.Controllers.RoutineController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="761.0" prefWidth="1000.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+                  <AnchorPane layoutX="71.0" layoutY="92.0" prefHeight="657.0" prefWidth="859.0" style="-fx-background-color: #e9e9e9;">
+                     <children>
+                        <ListView fx:id="exerciseLV" layoutX="616.0" layoutY="317.0" prefHeight="256.0" prefWidth="201.0" />
+                        <TabPane fx:id="weekTabPane" layoutX="44.0" layoutY="325.0" onContextMenuRequested="#wdTabChanged" prefHeight="235.0" prefWidth="446.0" style="-fx-background-radius: 10;" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab closable="false" onSelectionChanged="#wdTabChanged" text="Monday">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                                       <children>
+                                          <ListView fx:id="mondayRoutineLV" layoutX="3.0" layoutY="3.0" prefHeight="200.0" prefWidth="439.0" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab closable="false" onSelectionChanged="#wdTabChanged" text="Tuesday">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                                       <children>
+                                          <ListView fx:id="tuesdayRoutineLV" prefHeight="200.0" prefWidth="439.0" />
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab closable="false" onSelectionChanged="#wdTabChanged" text="Wednesday">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                                       <children>
+                                          <ListView fx:id="wednesdayRoutineLV" prefHeight="200.0" prefWidth="439.0" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab closable="false" onSelectionChanged="#wdTabChanged" style="-fx-background-radius: 5;" text="Thursday">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                                       <children>
+                                          <ListView fx:id="thursdayRoutineLV" prefHeight="200.0" prefWidth="439.0" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab closable="false" onSelectionChanged="#wdTabChanged" text="Friday">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="175.0" prefWidth="436.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                                       <children>
+                                          <ListView fx:id="fridayRoutineLV" prefHeight="200.0" prefWidth="439.0" />
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab closable="false" onSelectionChanged="#wdTabChanged" text="Saturday">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="175.0" prefWidth="436.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                                       <children>
+                                          <ListView fx:id="saturdayRoutineLV" prefHeight="200.0" prefWidth="439.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" onSelectionChanged="#wdTabChanged" text="Sunday">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="175.0" prefWidth="436.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                                       <children>
+                                          <ListView fx:id="sundayRoutineLV" prefHeight="200.0" prefWidth="439.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                        <JFXButton buttonType="RAISED" layoutX="383.0" layoutY="569.0" onMouseClicked="#RemoveExercise" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: orange;" text="Remove" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="577.0" onMouseClicked="#CreateRoutine" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: orange;" text="Create" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="23.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="617.0" layoutY="576.0" onMouseClicked="#AddExercise" prefHeight="31.0" prefWidth="201.0" style="-fx-background-color: orange;" text="Add" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <TextArea fx:id="searchBar" layoutX="616.0" layoutY="280.0" prefHeight="37.0" prefWidth="201.0" promptText="Search..." />
+                        <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="234.0" prefHeight="31.0" prefWidth="123.0" style="-fx-background-color: orange;" text="Recomended" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <ComboBox fx:id="routineCB" layoutX="617.0" layoutY="250.0" onDragDone="#DisplayRoutine" prefWidth="150.0" promptText="Routines" />
+                        <TextArea fx:id="routineNameTA" layoutX="44.0" layoutY="279.0" prefHeight="37.0" prefWidth="201.0" promptText="Routine Name" wrapText="true" />
+                        <AnchorPane fx:id="pieChartPane" centerShape="false" layoutX="311.0" layoutY="-32.0" prefHeight="147.0" prefWidth="177.0" />
+                        <Label fx:id="promptL" layoutX="334.0" layoutY="290.0" textFill="#ee2525" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="84.0" prefWidth="1000.0" styleClass="Header">
+                     <children>
+                        <AnchorPane layoutY="76.0" prefHeight="8.0" prefWidth="1000.0" style="-fx-background-color: orange;" />
+                        <Label layoutX="437.0" layoutY="17.0" text="Routine" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
